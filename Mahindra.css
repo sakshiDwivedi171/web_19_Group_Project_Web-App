@@ -1,0 +1,605 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+
+margin-top: -10px;
+background-color:#FFFFFF;
+}
+#left{
+    display: flex;
+    width:40%;
+   
+    margin-left:5%;
+   cursor: pointer;
+}
+#navimg{
+    vertical-align: middle;
+    margin-top: 5px;
+    height: 50px;
+    /*border: 1px solid red;*/
+    width: 80px;
+}
+/*navlogo style*/
+#right{
+    display:flex;
+   
+    margin-right: 30px;
+    width: 30%;
+
+   
+   
+}
+#left>.hyund{
+       margin-left: 10px;
+       display: flex;
+       color: #1A1A1A;
+}
+#vline{
+   width: 2px;
+   height: 40px;
+   background-color: grey;
+   margin-left: 27px;
+   margin-top: 8px;
+}
+/*vertical line*/
+
+.san_safe{
+   margin-top:40px;
+   margin-left: -30px;
+}
+/*nav hyund sub img*/
+.hyundimg{
+   margin-left: 5%;
+   margin-top: 20px;
+width: 85%;
+height: 20px;
+
+}
+#navh3:hover,#navlh3:hover,#smalllogo:hover{
+   color:#1caba2
+}
+/*navbar rigtht text*/
+#navh3{
+text-decoration: none;
+   color: #3C4043;
+   margin: 18px 20px 0;
+   text-align: left;
+   cursor: pointer;
+   font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+   
+}
+
+#navlh3{
+   margin-right: 10px;
+   margin-top: 18px;
+   color: #3C4043;
+   text-decoration: none;
+   font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+   cursor: pointer;
+}
+/*small logo signup*/
+#smalllogo{
+   margin-right: 10px;
+   margin-top: -1px;
+  cursor: pointer;
+   width: 20px;
+}
+
+/* above part navbarstyling*/
+
+
+/*hyundai subscrption page main box*/
+#subbackbox{
+   display: flex;
+   height: 750px;
+   width: 100%;
+   background-image: url(https://images.hindustantimes.com/auto/img/2022/02/04/1600x900/mahindra_scorpio_KUV100_NXT_1643954967462_1643954978645.jpg);
+  
+   background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+#subbox{
+   height: 80%;
+   width: 45%;
+   margin-top: 8%;
+   margin-left: 5%;
+   background-color: white;
+  ;
+}
+
+/*main box top part*/
+#subbox2{
+   height: 40%;
+   width: 100%;
+   
+   text-align: center;
+}
+
+#subbox2>img{
+   vertical-align: middle;
+   width: 330px;
+   height: 20px;
+   margin-top: 30px;
+} 
+.poweredby{
+   color: #000;
+   font-size: 14px;
+   margin-top: 20px;
+}
+#subbox>h2{
+letter-spacing: normal;
+text-align: center;
+color: #5a5254;
+font-size: 18px;
+}
+
+
+/**filter box**/
+#filter{
+width: 80%;
+height: 60px;
+margin: 0 6% 0 6%;
+border:none;
+outline: none;
+font-weight: 700;
+}
+.headh2{
+color: #5a5254;
+font-size: 18px;
+font-weight: 400;
+margin-top: 30px;
+}
+/*date box styling*/
+#date{
+width: 95%;
+height: 50px;
+margin-top: 0px;
+border:none;
+outline: none;
+font-weight: 700;
+
+}
+#ptag{
+margin:5px 0 0 7%;
+font-size: 10px;
+color: #7D7D7D ;
+}
+/**hr lines below select boxes*/
+hr{
+opacity: 100%;
+width: 80%;
+margin-left: 7%;
+margin-top: 1px;
+}
+#hr1{
+   opacity: 100%;
+   width: 100%;
+margin-left: 1px;
+   margin-top: 1px;
+}
+#datebox,#durbx{
+   width: 45%;
+   height: 80px;
+   margin-left: 5%;
+   margin-top: 5%;
+}
+#dates{
+   display: flex;
+}
+#ptag1{
+   font-size: 10px;
+  color: #7D7D7D;
+}
+
+/*button in searching hyundai cars box*/
+#btn{
+background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+border-radius: 4px;
+width: 30%;
+border: none;
+max-height: 45px;
+margin-top: 4%;
+margin-left: 33%;
+color: white;
+text-align: left;
+font-family: Poppins;
+font-weight: 700;
+font-size: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+#btn>img{
+margin-top: -40px;
+margin-left: 100px;
+}
+
+/*left box take delivery by year*/
+
+#take_hyundai_by_year{
+   height: 100px;
+   width: 35%;
+   background-color:#F6F6F6;
+   border-radius: 5px;
+   margin-top:8%;
+   margin-left: 5%;
+   
+}
+/*take hundai by year box*/
+
+#take_hyundai_by_year1{
+color: #000;;
+font-size: 16px;
+font-weight: 400;
+padding: 12px 0 0 24px;
+}
+.take_hyundai_by_year2{
+   font-size: 20px;
+   font-weight: 700px;
+   text-align: left;
+   margin-top: 0px;
+   
+}
+/*explore link stylin*/
+.take_hyundai_by_year3>a{
+font-size: 20px;
+color: #1caba2;
+padding-left: 12px;
+font-weight: 700px;
+   text-align: left;
+   text-decoration: none;
+   height: 30px;
+   margin-top: 10px;
+
+}
+/*explore link stylin*/
+
+.spn{
+width: 15px;
+height: 15px;
+margin-top: 1px;
+}
+#span{
+display: flex;
+width: 300px;
+}
+
+
+.howItWork {
+padding: 60px 15px 30px;
+margin-left: 90px;
+}
+.howItWorkHead {
+height: 36.59px;
+width: 960px;
+font-size: 30px;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+margin-bottom: 20px;
+}
+#work div {
+height: 283px;
+width: 243px;
+}
+#work div h4 {
+font-size: 24px;
+font-family: Poppins;
+margin-bottom: 5px;
+}
+#work div p {
+font-size: 14px;
+font-family: Poppins;
+}
+#work div img {
+border-radius: 100px;
+width: 120px;
+height: 120px;
+border: 8px solid #ddd;
+margin-bottom: 35px;
+box-sizing: border-box;
+box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+transition: transform 1s ease;
+}
+/* #work div img:hover {
+transform: scale(1.2);
+} */
+.rotate-img {
+transition: transform .7s ease-in-out 30s;
+transition-duration: 30s;
+}
+.rotate-img:hover {
+transform: rotate(360deg);
+transition: transform .7s ease-in-out 30s;
+transition-duration: 30s;
+background: #0EBABA;
+color: #0EBABA;
+}
+.up-down:hover{
+-webkit-animation: mover 2s infinite  alternate;
+animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+0% { transform: translateY(0); }
+100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+0% { transform: translateY(0); }
+100% { transform: translateY(-20px); }
+}
+.FAQs {
+background-color: #fcfcfc;
+margin: 0px 21px;
+padding-top: 20px;
+}
+
+/*faq section style*/
+.FAQs {
+background-color: #fcfcfc;
+margin: 0px 21px;
+padding-top: 20px;
+}
+.faq {
+height: 36.59px;
+width: 960px;
+margin: 0px 0px 20px;
+font-size: 30px;
+font-family: 'Roboto', sans-serif;
+margin-left: 95px;
+font-weight: bold;
+}
+.faq_div p {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+}
+.faq_div, 
+.faq img {
+cursor: pointer;
+}
+
+.logos {
+width: 100%;
+height: 175px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+}
+.logos div {
+width: 180px;
+height: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logos div img {
+height: 80%;
+width: 99%;
+}
+.logos div:hover {
+border-radius: 40px;
+background-color: #f4f4f4;
+cursor: pointer;
+}
+.ourJourney h2 {
+font-size: 35px;
+font-family: Poppins;
+font-weight: bold;
+margin-left: 95px;
+}
+.journeyLogo {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.journeyLogo div {
+height: 175px;
+width: 160px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+/* first foter creation */
+
+#firstFoter{
+width: 100%;
+height: 300px;
+background-color: rgb(42,43,54);
+padding: 60px 0;
+}
+
+#cityService
+{
+display: flex;
+  width: 100%;
+justify-content: space-around;
+
+}
+#cityService h2 {
+font-size: 16px;
+font-family: 'Poppins' , sans-serif;
+color: #FFFFFF;
+margin: 20px 0;
+}
+#cityService a{
+text-decoration: none;
+color: rgb(124,125,131);
+font-size: 13px;
+font-family: 'poppins';
+font-weight: bold;
+}
+#cityService>div a:hover{
+color: whitesmoke;
+}
+#cityService p{
+text-align: left;
+text-align: justify;
+margin-top: 0px;
+margin: 15px 0;
+}
+
+/* middle fotter creation */
+
+#midFoter{
+width: 100%;
+height: 270px;
+}
+#midDivFot
+{
+width: 100%;
+display: flex;
+height: 100%;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(61,66,80);
+}
+#firstDiv {
+display: flex;
+flex-direction: column;
+gap: 0px;
+}
+#firstDiv img {
+margin-top: 30px;
+}
+#firstDiv li{
+list-style: none;
+
+}
+#firstDiv ul{
+display: flex;
+gap: 10px;
+}
+#firstDiv i{
+font-size:26px;
+text-align: center;
+width: 45px;
+height: 40px;
+border-radius: 50%;
+background-color:#0EBABA;
+color: #ffff;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+#firstDiv>img{
+width: 105px;
+height: 75px;
+}
+
+#h3,#h4{
+color: #FFF;
+font-family: 'Poppins';  
+text-align: justify;
+margin-left: 40px;
+}
+#h4 {
+font-weight: lighter;
+}
+#h3 {
+font-size: 24px;
+}
+#contact {
+font-weight: lighter;
+font-size: 24px;
+color: #0EBABA;
+font-weight: bold;
+margin-left: 40px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#h2{
+color: #0EBABA;
+font-family: 'poppins';  
+text-align: justify;
+margin-left: 40px;
+}
+#pLine{
+text-align: left;
+color: #fff;
+font-size: 10px;
+font-family: 'poppins';
+}
+
+#lastTextFoter{
+width: 100%;
+height: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 40px 0;
+}
+#lastTextFoter p,.lastH2{
+text-align: left;
+text-align: justify;
+margin-left: 120px;
+font-family: 'poppins';
+margin-right: 10px;
+}
+#lastTextFoter p{
+font-size: 14px;
+margin-right: 100px;
+margin-top: 10px;
+color: rgb(145,148,139); 
+}
+.lastH2{
+font-size: 18px;
+font-weight: 500;
+color: black;   
+}
+b{
+font-weight: bolder;
+}
+
+/*all  serviceable cities*/
+
+.idsc{
+/* border:1px solid red; */
+border-radius: 18px;
+      width: 1210px;
+      height:500px ;
+      background-color: rgb(42, 42, 42);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin:auto;
+    
+}
+.divsc{
+border-radius: 18px;
+/* border:1px solid red; */
+padding:0px;
+display: flex;
+width: 100%;
+height:368px ;
+background-color:rgb(42, 42, 42);
+}
+.divsc>div{
+background-color:rgb(42, 42, 42);
+margin:60px;
+
+margin-top: -5px;
+}
+.scp{
+background-color: rgb(42, 42, 42);
+color: rgb(177, 173, 173);
+}
+#sch1{
+background-color: rgb(42, 42, 42);
+
+width: 200px;
+margin-left: 40px;
+margin-top: 30px;
+color:rgb(224, 224, 224);
+}
+.scp:hover{
+color:white
+}
