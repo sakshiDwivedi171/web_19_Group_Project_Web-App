@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        border: 3px solid #f1f1f1;
+        width: 400px;
+        background-color: white;
+        margin-left: 30%;
+        margin-top: 20px;
+      }
+
+      /* Full-width inputs */
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #0ebaba;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+      }
+
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Center login */
+      .login {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        font-size: 30px;
+        color: gray;
+      }
+
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+      }
+
+      /* The "Forgot password" text */
+      span.psw {
+        text-underline-offset: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+      }
+
+      span.psw a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="login1">
+      <div class="login">Login</div>
+
+      <div class="container">
+        <input type="text" placeholder="Enter Email" name="uemail" required />
+        <hr />
+
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <hr />
+        <span class="psw">
+          <a href="*">Send a new password to my email ID</a></span
+        >
+
+        <button type="submit">Login</button>
+        <span class="psw"
+          >Don't have account yet ? <a href="signup.html">Sign Up</a></span
+        >
+      </div>
+
+      <div class="container">
+        <span class="img"
+          ><a href="*"
+            ><img
+              src="https://www.revv.co.in/imgs/google-login.png"
+              alt="google" /></a
+        ></span>
+      </div>
+      <div class="container">
+        <span class="img"
+          ><a href="*"
+            ><img
+              src="https://www.revv.co.in/imgs/facebook-icon.png"
+              alt="facebook" /></a
+        ></span>
+      </div>
+    </form>
+  </body>
+</html>
+<script>
+  
+
+//for login//
+document.querySelector(".psw").addEventListener('submit',forlogin)
+
+var reguser=JSON.parse(localStorage.getItem("userdatabase"))
+
+
+
+function forlogin(event){
+    event.preventDefault()
+    document.querySelector("#submit").textContent=JSON.parse(localStorage.getItem("nameofmyuser"))
+
+
+    var loginemail=document.querySelector("#loginenteremail").value
+    var loginpassword=document.querySelector("#loginenterpassword").value
+
+    var final=false
+    for(var i=0; i<reguser.length; i++)
+    {
+        
+        if(reguser[i].signinemail==loginemail && reguser[i].signinpassword==loginpassword)
+        {
+            final=true;
+            var nameofmyuser=reguser[i].signinemail
+        }
+    }
+    if(final==true)
+        {
+            alert("login Successful")
+            document.querySelector("#signupmaincontainer").style.display="none"
+            document.querySelector("#maincontainer").style.display="none"
+            document.querySelector("#clickonsignin").textContent="Welcome"+" "+nameofmyuser;
+            document.querySelector("#clickonsignin").style.marginTop="20px"
+            document.querySelector("#clickonsignin").style.fontSize="15px"
+            localStorage.setItem("nameofmyuser",JSON.stringify("welcome"+" "+nameofmyuser))
+            
+        }
+        else{
+            alert("Wrong Email or Password")
+
+        }
+        
+}
+</script>
