@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <style>
+      form {
+        border: 3px solid #f1f1f1;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        margin-left: 30%;
+        margin-top: 20px;
+      }
+
+      /* Full-width inputs */
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #0ebaba;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 20px;
+      }
+
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Center login */
+      .login {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        font-size: 30px;
+        color: gray;
+      }
+
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="mysignup" method="post">
+      <div class="login">Signup</div>
+      <div class="container">
+        <span class="img"
+          ><a href=""
+            ><img
+              src="https://www.revv.co.in/imgs/google-login.png"
+              alt="google" /></a
+        ></span>
+      </div>
+      <div class="container">
+        <span class="img"
+          ><a href=""
+            ><img
+              src="https://www.revv.co.in/imgs/facebook-icon.png"
+              alt="facebook" /></a
+        ></span>
+      </div>
+
+      <div class="container">
+        <input
+          id="my"
+          type="text"
+          placeholder="Enter Email"
+          name="uemail"
+          required
+        />
+
+        <button onclick="myfunc()" type="submit">Procced</button>
+      </div>
+    </form>
+  </body>
+</html>
+<script>
+  // for signup
+  // document.querySelector("").addEventListener("submit", forsignup);
+  // var userstack = JSON.parse(localStorage.getItem("userdatabase")) || [];
+  // function forsignup(event) {
+  //   event.preventDefault();
+
+  //   var signemail = document.querySelector("").value;
+  //   var signpassword = document.querySelector("#mysignup").value;
+
+  //   var userdata = {
+  //     signinemail: signemail,
+  //     signinpassword: signpassword,
+  //   };
+  //   userstack.push(userdata);
+
+  function myfunc() {
+    alert("Sign up Successful");
+  }
+
+  // localStorage.setItem("userdatabase", JSON.stringify(userstack));
+</script>
